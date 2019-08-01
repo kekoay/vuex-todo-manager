@@ -25,14 +25,14 @@ import { mapGetters, mapActions } from 'vuex';
 export default {
     name: "Todos",
     methods: {
-        ...mapActions(["fetchTodos", "deleteTodo", "updatedTodo"]),
+        ...mapActions(["fetchTodos", "deleteTodo", "updateTodo"]),
         onDblClick(todo) {
-            const updateTodo = {
+            const updTodo = {
                 id: todo.id,
                 title: todo.title,
                 completed: !todo.completed
             }
-            this.updateTodo(updateTodo);
+            this.updateTodo(updTodo);
         }
     },
     computed: mapGetters(['allTodos']),
