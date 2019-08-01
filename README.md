@@ -1,5 +1,5 @@
 # vuex-todo-manager
-
+Vuex project that works with a todo list. Based on the YouTube video by traversy media https://www.youtube.com/watch?v=5lVQgZzLMHc
 ## Project setup
 ```
 npm install
